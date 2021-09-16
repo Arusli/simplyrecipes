@@ -2,9 +2,9 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div>
-            <h2>Footer</h2>
-        </div>
+        <footer class='page-footer'>
+            <p>&copy; {new Date().getFullYear()}<span>Simple Recipes</span>. Built with{" "} <a href='https://www.gatbsyjs.com/'>Gatsby</a> </p>
+        </footer>
     )
 }
 
