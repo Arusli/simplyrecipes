@@ -6,16 +6,30 @@ import { StaticImage } from 'gatsby-plugin-image';
 const Images = () => {
     return (
         <Wrapper>
-            <StaticImage src='../assets/images/big.jpg' alt='food' />
-            <StaticImage src='https://res.cloudinary.com/diqqf3eq2/image/upload/v1613583026/course%20slides/js-2_mo9uqy.png' alt='code' />
-            <h2>gatsby image</h2>   
+            <article>
+                <h4>constrained/default</h4>
+                <StaticImage 
+                src='../assets/images/recipe-1.jpeg' 
+                alt='food' 
+                height={400}
+                placeholder='tracedSVG'
+                layout='constrained'
+                className='example-img'
+                as='section'
+                />
+            </article>
         </Wrapper>
     )
 }
 
 const Wrapper = styled.section`
-img {
-    width: 200px;
+width: 70vw;
+margin: 0 auto;
+article {
+    border: 2px solid red;
+}
+.example-img {
+    border-radius: 1rem;
 }
 `
 
