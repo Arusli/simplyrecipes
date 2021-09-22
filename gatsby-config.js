@@ -15,7 +15,7 @@ module.exports = {
       age: 32
     },
     simpleData: ['item1', 'item2'],
-    complextData: [ 
+    complexData: [ 
       {name: 'John', age: 32},
       {name: 'Susan', age: 25}
   ]
