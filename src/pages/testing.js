@@ -2,7 +2,10 @@ import React from 'react'
 import {graphql} from 'gatsby'
 
 const Testing = ({data}) => {
+    // console.log(props);
+    console.log(data);
     const author = data.site.info.author;
+    // const author = 'whatever'
     return (
         <div>
             <h2>Author: {author}</h2>
@@ -10,7 +13,7 @@ const Testing = ({data}) => {
     )
 }
 
-export const data = graphql`
+export const query = graphql`
 query {
     site {
       info: siteMetadata {
@@ -30,4 +33,5 @@ query {
     }
   }
 `
+
 export default Testing
