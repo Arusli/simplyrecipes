@@ -2,6 +2,7 @@ import React from "react";
 import Layout from '../components/Layout.js';
 import { StaticImage } from "gatsby-plugin-image";
 import FetchData from '../examples/fetchData';
+import AllRecipes from "../components/AllRecipes.js";
 
 export default function Home(props) {
   console.log('home props', props);
@@ -24,7 +25,9 @@ export default function Home(props) {
             </div>
           </header>
           <FetchData />
+          <AllRecipes />
         </main>
+        
     </Layout>
   )
 }
