@@ -30,9 +30,10 @@ const AllRecipes = () => {
 
     return (
         <div>
-            <h4>All Recipes</h4>
-            <TagList recipes={recipes} />
-            <RecipesList recipes={recipes} />
+            <section className='recipes-container'>
+              <TagList recipes={recipes} />
+              <RecipesList recipes={recipes} />
+            </section>
         </div>
     )
 }
