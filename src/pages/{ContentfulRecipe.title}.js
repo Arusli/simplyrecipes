@@ -1,11 +1,12 @@
 import React from 'react'
 
-const RecipeTemplate = () => {
+const RecipeTemplate = (props) => {
+    console.log(props);
     return (
         <div>
-            <h4>Recipe Template</h4>
+            <h2>{props.params.title}</h2>
         </div>
-    )
-}
+    );
+};
 
 export default RecipeTemplate
