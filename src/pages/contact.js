@@ -51,6 +51,7 @@ export const query = graphql`
       filter: {featured: {eq: true}}
     ) {
       nodes {
+        title
         id
         cookTime
         prepTime

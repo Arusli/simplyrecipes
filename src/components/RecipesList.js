@@ -12,7 +12,7 @@ const RecipesList = ({recipes=[]}) => {
                 const slug = slugify(title, {lower: true})
                 console.log(recipe)
                 return (
-                    <Link key={id} to={slug} className='recipe'>
+                    <Link key={id} to={`/${slug}`} className='recipe'>
                         <GatsbyImage 
                         image={pathToImage} 
                         className='recipe-img' 
