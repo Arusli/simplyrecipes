@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import {Link, graphql} from 'gatsby';
+import {graphql} from 'gatsby';
 import RecipesList from '../components/RecipesList';
 
 const contact = ({data}) => {
@@ -17,7 +17,7 @@ const contact = ({data}) => {
                         <p>Paleo glossier kogi iceland put a bird on it, aesthetic direct trade knausgaard. Swag bespoke truffaut af, green juice brooklyn microdosing. Kale chips typewriter master cleanse, flannel pork belly farm-to-table man braid locavore green juice sriracha sustainable. DIY tofu williamsburg, kitsch intelligentsia cornhole roof party church-key gluten-free vinyl raw denim hell of farm-to-table.</p>
                     </article>
                     <article>
-                        <form className='form contact-form'>
+                        <form className='form contact-form' action="https://formspree.io/f/mdoyjkpo" method="POST">
                             <div className='form-row'>
                                 <label htmlFor='name'>your name</label>
                                 <input type='text' name='name' id='name' />
