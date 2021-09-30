@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from '../components/Layout.js';
 import { StaticImage } from "gatsby-plugin-image";
-import FetchData from '../examples/fetchData';
 import AllRecipes from "../components/AllRecipes.js";
 import Seo from '../components/Seo';
 
@@ -9,7 +8,7 @@ export default function Home(props) {
   console.log('home props', props);
   return (
     <Layout>
-        <Seo title='Home' description='This is home page' />
+        <Seo title='Home' />
         <main className='page'>
           <header className='hero'>
             <StaticImage 
