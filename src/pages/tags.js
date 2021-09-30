@@ -3,12 +3,14 @@ import Layout from '../components/Layout';
 import {graphql, Link} from 'gatsby';
 import setupTags from '../utils/setupTags';
 import slugify from 'slugify';
+import Seo from '../components/Seo';
 
 const Tags = ({data}) => {
     const newTags = setupTags(data.allContentfulRecipe.nodes);
     console.log(newTags);
     return (
         <Layout>    
+            <Seo title='Tags' />
             <main className='page'>
                 <section className='tags-page'>
                     {newTags.map((tag,index) => {

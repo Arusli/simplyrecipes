@@ -3,16 +3,18 @@ import Layout from '../components/Layout';
 import {StaticImage} from 'gatsby-plugin-image';
 import {Link, graphql} from 'gatsby';
 import RecipesList from '../components/RecipesList';
+import Seo from '../components/Seo';
 
 const About = ({data:{allContentfulRecipe:{nodes:recipes}}}) => {
     return (
         <Layout>    
+            <Seo title='About' />
             <main className='page'>
                 <section className='about-page'>
                     <article>
                         <h2>I'm baby coloring turkey.</h2>
                         <p>I'm baby chambray authentic gochujang. Yr butcher fingerstache small batch raw denim twee, flannel hoodie affogato edison bulb hammock deep v polaroid.</p>
-                        <p>Actually kogi lo-fi lumbersexual, cornhole craft beer put a bird on it blog raclette. Pop-up cold-pressed gentrify hell of mixtape everyday carry.</p>
+                        <p>Craft beer put a bird on it blog raclette. Pop-up cold-pressed gentrify hell of mixtape everyday carry.</p>
                         <Link to='/contact' className='btn'>
                             contact
                         </Link>

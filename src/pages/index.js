@@ -3,13 +3,13 @@ import Layout from '../components/Layout.js';
 import { StaticImage } from "gatsby-plugin-image";
 import FetchData from '../examples/fetchData';
 import AllRecipes from "../components/AllRecipes.js";
-import SEO from '../components/SEO';
+import Seo from '../components/Seo';
 
 export default function Home(props) {
   console.log('home props', props);
   return (
     <Layout>
-        <SEO />
+        <Seo title='Home' description='This is home page' />
         <main className='page'>
           <header className='hero'>
             <StaticImage 
@@ -26,10 +26,8 @@ export default function Home(props) {
               </div>
             </div>
           </header>
-          <FetchData />
           <AllRecipes />
-        </main>
-        
+        </main>        
     </Layout>
   )
 }
